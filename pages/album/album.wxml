@@ -1,0 +1,7 @@
+<view>
+  <nav-bar title="我的影集">
+    <navigator url="/pages/index/index">
+      <text class="nav-back" decode>&lt;</text>
+    </navigator>
+  </nav-bar>
+</view>

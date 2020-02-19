@@ -1,0 +1,13 @@
+<view class="item-box">
+  <image class="album-img"
+  mode="aspectFill"
+  src="{{url}}"></image>
+  <view class="album-title-item">{{title}}</view>
+  <view class="album-total">{{total}}张</view>
+  <view
+    wx:if="{{albumIsEdit}}"
+    bind:tap="deleteItem"
+    class="delete-item">
+    <text class="iconfont icon-bianji"></text>
+  </view>
+</view>

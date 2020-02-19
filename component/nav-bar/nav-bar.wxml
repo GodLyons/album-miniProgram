@@ -1,0 +1,11 @@
+<!--component/nav-bar2.wxml-->
+<view>
+  <view class="status-bar" style="height: {{statusBarHeight}}px"></view>
+  <view class="nav-container"
+  style="height: {{navBarHeight}}px;line-height: {{navBarHeight}}px">
+    <view class="nav-icon">
+      <slot></slot>
+    </view>
+    <view class="nav-title">{{title}}</view>
+  </view>
+</view>

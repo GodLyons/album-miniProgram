@@ -1,0 +1,10 @@
+/* component/nav-bar2.wxss */
+.nav-container {
+  position: relative;
+  padding: 0 20rpx;
+  text-align: center;
+}
+.nav-icon {
+  position: absolute;
+  z-index: 2;
+}

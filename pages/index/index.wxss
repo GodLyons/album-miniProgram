@@ -1,0 +1,85 @@
+.iconfont {
+  font-size: 18px;
+}
+.index-bgi-box {
+  position: relative;
+  overflow: hidden;
+  height: 480rpx;
+  background-image: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1386170415,1366257069&fm=26&gp=0.jpg');
+  background-size: 100% 100%;
+}
+.index-bgi-content {
+  overflow: hidden;
+  padding: 50rpx 20rpx;
+  font-weight: 700;
+  font-size: 14px;
+}
+.index-bgi-content-left {
+  float: left;
+}
+.index-bgi-content-right {
+  float: right;
+  font-weight: normal;
+  color: #999;
+}
+.add-ablum {
+  width: 60%;
+  margin: 240rpx auto;
+  padding: 10rpx 0;
+  border: 1px solid #ccc;
+  border-radius: 8rpx;
+  text-align: center;
+  color: #666;
+}
+.close-bgi-top {
+  height: 20rpx;
+  background-color: #eee;
+}
+.close-bgi-bottom {
+  width: 140rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  background-color: #eee;
+  margin: 0 auto;
+}
+.close-bgi-icon {
+  font-size: 14px;
+}
+.my-album {
+  width: 720rpx;
+  padding: 0 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.album-title {
+  padding: 30rpx 20rpx;
+  font-weight: 700;
+}
+.fixed-add {
+  position: fixed;
+  z-index: 10;
+  bottom: 50rpx;
+  right: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: blue;
+  /* font-size: 20px; */
+}
+.add-icon {
+  font-size: 80rpx;
+}
+.edit-complete {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

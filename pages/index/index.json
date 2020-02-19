@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "nav-bar": "/component/nav-bar/nav-bar",
+    "nav-list": "/component/nav-list/nav-list",
+    "nav-pop": "/component/nav-pop/nav-pop",
+    "album-item": "/component/album-item/album-item",
+    "footer-com": "/component/footer/footer"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,39 @@
+/* component/nav-pop/nav-pop.wxss */
+.pop-container {
+  text-align: left;
+}
+.pop-down {
+  position: absolute;
+  z-index: 2;
+  top: 54rpx;
+  left: -10rpx;
+}
+.pop-triangle {
+  width: 0;
+  height: 0;
+  margin-left: 14rpx; 
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid #fff;
+  border-left: 16rpx solid transparent;
+  border-right: 16rpx solid transparent;
+}
+.pop-content {
+  width: 260rpx;
+  padding: 5rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.pop-item {
+  padding: 0 30rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.pop-item:last-child {
+  border-bottom: 0; 
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

@@ -1,0 +1,33 @@
+.item-box {
+  position: relative;
+  width: 330rpx;
+  padding: 0 14rpx;
+  margin-bottom: 20rpx;
+}
+.album-img {
+  width: 330rpx;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+.album-title-item {
+  font-size: 14px;
+  font-weight: 700;
+}
+.album-total {
+  font-size: 12px;
+  color: #666;
+}
+.delete-item {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  top: 0;
+  right: 14rpx;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 4rpx;
+}
+.icon-bianji {
+  color: #fff;
+}

@@ -1,0 +1,67 @@
+<view>
+  <!-- 导航start -->
+  <nav-list
+    wx:if="{{modelShow}}"
+    bindcloseModel="closeModel"></nav-list>
+  <nav-bar title="腾讯相册">
+    <nav-pop
+      show="{{modelShow}}">
+      <text
+      class="iconfont icon-sangangy"
+      bindtap="openNavList"></text>
+    </nav-pop>
+  </nav-bar>
+  <!-- 导航end -->
+  <!-- 背景start -->
+  <view
+    class="index-bgi-box" 
+    animation="{{animateData}}">
+    <view class="index-bgi-content">
+      <view class="index-bgi-content-left">动感影集</view>
+      <navigator class="index-bgi-content-right" url="/pages/album/album">
+        查看我的动感影集>
+      </navigator>
+    </view>
+    <view class="add-ablum">
+      <text class="iconfont icon-jia"></text>
+      <text>新建动感影集</text>
+    </view>
+  </view>
+  <view class="close-bgi">
+    <view class="close-bgi-top"></view>
+    <view class="close-bgi-bottom" bindtap="toggleBgi">
+      <!-- 由于icon不够，所以有些icon就随便找了一个 -->
+      <text
+        class="iconfont close-bgi-icon {{bgiShow ? 'icon-shang' : 'icon-suo'}}"></text>
+    </view>
+  </view>
+  <!-- 背景end -->
+  <!-- 我的相册start -->
+  <view class="album-title">我的相册</view>
+  <view class="my-album">
+    <album-item
+      wx:for="{{albumData}}"
+      wx:key="{{item.id}}"
+      bind:longpress="editMyAlbum"
+      bind:delete="delteAlbum"
+      class="album-item"
+      albumIsEdit="{{albumIsEdit}}"
+      uuid="{{item.id}}"
+      title="{{item.title}}"
+      total="{{item.total}}"
+      url="{{item.url}}"></album-item>
+  </view>
+  <!-- 我的相册end -->
+  <!-- 底部start -->
+  <footer-com></footer-com>
+  <!-- 底部end -->
+  <view class="fixed-add" bind:tap="addNewAlbum">
+    <text class="iconfont icon-jia add-icon"></text>
+  </view>
+  <view
+    wx:if="{{albumIsEdit}}"
+    class="edit-complete"
+    bind:tap="closeEditAlbum">
+    完成
+  </view>
+</view>

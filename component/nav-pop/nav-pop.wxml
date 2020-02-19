@@ -1,0 +1,31 @@
+<!--component/nav-pop/nav-pop.wxml-->
+<view class="pop-container">
+  <slot></slot>
+  <view wx:if="{{show}}" class="pop-down">
+    <view class="pop-triangle"></view>
+    <view class="pop-content">
+      <!-- 相册消息 -->
+      <navigator
+        class="pop-item"
+        url="/pages/message/message">
+        <text class="left iconfont icon-suo"></text>
+        <text class="right">相册消息</text>
+      </navigator>
+      <!-- 切换账号 -->
+      <view class="pop-item" bindtap="changeUser">
+        <text class="left iconfont icon-yingji-"></text>
+        <text class="right">切换账号</text>
+      </view>
+      <!-- 意见反馈 -->
+      <view class="pop-item" bindtap="suggestBack">
+        <text class="left iconfont icon-shang"></text>
+        <text class="right">意见反馈</text>
+      </view>
+      <!-- 退出相册 -->
+      <navigator class="pop-item" open-type="exit" target="miniProgram">
+        <text class="left iconfont icon-jia"></text>
+        <text class="right">退出相册</text>
+      </navigator>
+    </view>
+  </view>
+</view>

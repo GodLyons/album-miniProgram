@@ -1,0 +1,7 @@
+/* component/footer/footer.wxss */
+.footer {
+  padding: 80rpx 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}

@@ -1,0 +1,9 @@
+<!--component/nav-list/nav-list.wxml-->
+<view>
+  <!-- 遮罩层 -->
+  <view
+    bindtap="closeModel"
+    class="model"
+    style="height: {{modelHeight}}px;width: {{modelWidth}}px;">
+  </view>
+</view>
